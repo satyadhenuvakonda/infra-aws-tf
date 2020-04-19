@@ -1,4 +1,6 @@
 #!/bin/bash
+# pre requisits
+sudo apt install -y curl jq unzip
 
 function terraform-install() {
   [[ -f ${HOME}/bin/terraform ]] && echo "`${HOME}/bin/terraform version` already installed at ${HOME}/bin/terraform" && return 0
